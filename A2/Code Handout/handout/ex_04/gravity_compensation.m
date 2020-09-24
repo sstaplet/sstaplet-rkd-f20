@@ -45,8 +45,8 @@ while true
     % Set the torques that the robot should command (should move the end
     % effector towards 'center_pt_spring').
     
-    torques = get_gravity_comp_torques(theta, gravity);
-    cmd.torque = transpose([torques(1) torques(2)]); % Note: should be a 1x2 (row) vector.
+    torques = get_grav_comp_torques(theta, gravity);
+    cmd.torque = [torques(1) torques(2)]; % Note: should be a 1x2 (row) vector.
 
     % --------------- END STUDENT SECTION ------------------------------------
 

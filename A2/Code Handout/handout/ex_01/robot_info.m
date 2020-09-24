@@ -7,8 +7,13 @@ robot_info.link_lengths = [0.3280, 0.3160]; % It is your responsibility to measu
 % (density of link tube is .1213 kg/m, with additional .165 kg of hardware at
 % ends)
 robot_info.link_masses = robot_info.link_lengths * 0.1213 + [.165, .165];
-robot_info.joint_masses = [0.347; 0.3];
+robot_info.joint_masses = [0.381; 0.3];
 robot_info.end_effector_mass = 0; % Nothing for the end effector for this lab!
 
+
+robot_info.link_lengths = [0.381, 0.3048];
+robot_info.link_masses = robot_info.link_lengths * 0.1213 + [.35, .07];
+robot_info.joint_masses = [0.342, 0.342];
+robot_info.end_effector_mass = 0;
 end
 
