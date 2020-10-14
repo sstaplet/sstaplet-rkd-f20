@@ -106,11 +106,13 @@ hold off;
 title('Plot of joint velocities during trajectory');
 xlabel('t');
 ylabel('joint velocities');
+
+
 subplot(3,1,3);
 if(simulator)
     plot(hebilog.time, hebilog.effort, 'r--', 'LineWidth', 1)
 else 
-    plot(hebilog.time, hebilog.torque, 'r--', 'LineWidth', 1)
+    plot(hebilog.time, hebilog.effort, 'r--', 'LineWidth', 1)
 end
 title('Plot of joint torques during trajectory');
 xlabel('t');
